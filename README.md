@@ -78,3 +78,5 @@ This repository is the implementation of [THIS](http://www.riss.kr/link?id=T1551
 Meshlab 실행.
 sem_seg/log6/dump 폴더에 있는 xxxx_pred.obj 파일을 연다.
 
+# Acknowledgement
+The structure of this codebase is borrowed from [PointNet](https://github.com/charlesq34/pointnet)
