@@ -1,38 +1,38 @@
-# S-Pointnet
+### S-Pointnet
 
 환경: Tensorflow-gpu 1.5.0  CUDA 9.0  cudnn 7.0.5
 1.	Meshlab 설치: 
-> sudo add-apt-repository ppa:zarquon42/meshlab
-> sudo apt-get update
-> sudo apt-get install meshlab
+  sudo add-apt-repository ppa:zarquon42/meshlab
+  sudo apt-get update
+  sudo apt-get install meshlab
 
 2.	Tensorflow-gpu 환경안에 include 경로 와 library 경로 찾기:
 #find tensorflow include path and library paths
-> Python
-import tensorflow as tf
-print(tf.sysconfig.get_include())
-print(tf.sysconfig.get_lib())
+  Python
+  import tensorflow as tf
+  print(tf.sysconfig.get_include())
+  print(tf.sysconfig.get_lib())
 
 3.	TF operator 컴파일
 밑에 4개 파일의 경로를 2에 나온 경로로 수정
 # TF operator compiling
-> cd utils/tf_ops/grouping
-> chmod 777 tf_grouping_compile.sh
-> ./tf_grouping_compile.sh
-> cd utils/tf_ops/interpolation
-> chmod 777 tf_interpolate_compile.sh
-> ./tf_interpolate_compile.sh
-> cd utils/tf_ops/pointSIFT
-> chmod 777 tf_pointSIFT_compile.sh
-> ./tf_pointSIFT_compile.sh
-> cd utils/tf_ops/sampling
-> chmod 777 tf_sampling_compile.sh
-> ./tf_sampling_compile.sh
+  cd utils/tf_ops/grouping
+  chmod 777 tf_grouping_compile.sh
+  ./tf_grouping_compile.sh
+  cd utils/tf_ops/interpolation
+  chmod 777 tf_interpolate_compile.sh
+  ./tf_interpolate_compile.sh
+  cd utils/tf_ops/pointSIFT
+  chmod 777 tf_pointSIFT_compile.sh
+  ./tf_pointSIFT_compile.sh
+  cd utils/tf_ops/sampling
+  chmod 777 tf_sampling_compile.sh
+  ./tf_sampling_compile.sh
 
 4.	Training data 다운로드
 (1)	https://console.cloud.google.com/storage/browser/dataset_cvpr16?pli=1 에Stanford3dDataset_v1.2_Aligned_Version.zip 를 다운로드, data/ 에 압축풀기
-(2)	> cd sem_seg/
-> sh download_data.sh
+(2)	 cd sem_seg/
+     sh download_data.sh
 
 5.	Training data 예전 처리
 #data process
