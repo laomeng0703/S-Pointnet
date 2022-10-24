@@ -47,7 +47,9 @@ This repository is the implementation of [THIS](http://www.riss.kr/link?id=T1551
 > ./tf_sampling_compile.sh
 ```
 4.	Training data 다운로드
+
 (1)	https://console.cloud.google.com/storage/browser/dataset_cvpr16?pli=1 에Stanford3dDataset_v1.2_Aligned_Version.zip 를 다운로드, data/ 에 압축풀기
+
 (2)	
 ```
 > cd sem_seg/
