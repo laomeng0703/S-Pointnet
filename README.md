@@ -5,6 +5,7 @@
 This repository is the implementation of [THIS](http://www.riss.kr/link?id=T15511783) 
 
 
+## 실행방법 
 환경:
 
 - Tensorflow-gpu 1.5.0  
