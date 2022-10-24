@@ -4,6 +4,8 @@
 
 This repository is the implementation of [THIS](http://www.riss.kr/link?id=T15511783) 
 
+![architecture](pic/architecture.png)
+![result](pic/result.png)
 
 ## 실행방법 
 환경:
